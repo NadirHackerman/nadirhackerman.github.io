@@ -9,6 +9,7 @@ function changeCSS(cssFile, cssLinkIndex) {
 
     document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
 }
+
 jQuery(document).ready(function ($) {
 
   $('#checkbox').change(function(){
@@ -52,6 +53,15 @@ jQuery(document).ready(function ($) {
 
     $('button.control_next').click(function () {
         moveRight();
+    });
+
+    $('#mobile').click(function () {
+        $('.pic').height(216);
+        $('#slider ul li').width(288);
+        $('#slider ul li').height(216);
+        $('#slider').width(288);
+        $('#slider').height(216);
+
     });
 
 });
