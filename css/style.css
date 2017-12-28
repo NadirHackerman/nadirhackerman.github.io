@@ -1,6 +1,5 @@
 @media screen 
-  and (device-width: 320px) 
-  and (device-height: 640px) {
+  and (max-device-width: 720px) {
     .pic {
       /*width:1152px;*/
       height: 216px;
