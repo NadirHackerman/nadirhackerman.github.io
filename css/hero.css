@@ -21,11 +21,12 @@ html,body {
   border-left: none;
   border-right: none;
 }
-.card-image > .fa {
+
+
+.card-image > .fa , .card-image > .material-icons{
   font-size: 8rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  color: #209cee;
 }
 .card-content .content {
   font-size: 14px;
@@ -50,4 +51,24 @@ html,body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+.nadir-text-red {
+  color: #df3c3e;
+}
+
+.nadir-text-blue {
+  color: #0078ff;
+}
+
+.nadir-text-orange {
+  color: #e77626;
+}
+
+.nadir-text-purple {
+  color: #b03eff;
+}
+
+.nadir-text-green {
+  color: #139e8c;
 }
