@@ -1,0 +1,83 @@
+/* Fonts */
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'Encode Sans Condensed', sans-serif;
+}
+
+/* Typographie */
+
+.nadir-text-red {
+  color: #df3c3e;
+}
+
+.nadir-text-blue {
+  color: #0078ff;
+}
+
+.nadir-text-orange {
+  color: #e77626;
+}
+
+.nadir-text-purple {
+  color: #b03eff;
+}
+
+.nadir-text-green {
+  color: #139e8c;
+}
+
+.nadir-text-white {
+  color: #fff;
+}
+
+.nadir-text-uppercase {
+  text-transform: uppercase;
+}
+
+.nadir-text-lowercase {
+  text-transform: lowercase;
+}
+
+/* Buttons */
+
+.nadir-btn {
+  background-color: #000000;
+  color: #fff;
+  padding-bottom: 0.4em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  padding-top: 0.4em;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+  letter-spacing: 0.075em;
+  border-radius: 5%;
+}
+
+.nadir-btn-cyan {
+  background: #00aaff;
+}
+
+.nadir-btn-red {
+  background: #df3c3e;
+}
+
+.nadir-btn-blue {
+  background: #0078ff;
+}
+
+.nadir-btn-orange {
+  background: #e77626;
+}
+
+.nadir-btn-purple {
+  background: #b03eff;
+}
+
+.nadir-btn-green {
+  background: #139e8c;
+}
