@@ -9,6 +9,18 @@
 	</head>
 	<body>
 		<div class="container">
+			<div class="row justify-content-md-center">
+				<div class="col-md-auto">
+					<div class="form-inline">
+						<form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+							<img src="./images/google.png" width="32" style="margin-right: 10px;">
+							<input id="googlesearch" autocomplete="on" class="form-control search" name="q" placeholder="Search in Google" required="required"  type="text">
+							<button class="glow-on-hover" type="submit">Search</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="separator"></div>
 			<div class="row justify-content-md">
 				<div class="col-md-auto links">
 					<a class="btnx google" href="#"><i class="fa fa-google"></i></a>
@@ -45,5 +57,10 @@
 			</div> -->
 		</div>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			 document.body.onload = function(){
+			 	document.getElementById("googlesearch").focus();
+			 }; 
+		</script>
 	</body>
 </html>
