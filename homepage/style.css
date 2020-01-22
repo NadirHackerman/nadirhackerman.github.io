@@ -12,7 +12,8 @@ ul li {
 
 .btnx,
 .btnx:before,
-.btnx .fa {
+.btnx .fa, 
+.btnx .icon-googledrive {
   transition: all 0.35s;
   transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
 }
@@ -22,7 +23,7 @@ ul li {
   left: -110%;
 }
 
-.btnx .fa {
+.btnx .fa, .btnx i {
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
 }
@@ -49,6 +50,14 @@ ul li {
 
 .btnx.google .fa {
   color: #dc4a38;
+}
+
+.btnx.gdrive:before {
+  background-color: rgba(0, 0, 0, 0.0);
+}
+
+.btnx.gdrive .icon-googledrive {
+  color: #0c9354;
 }
 
 .btnx.reddit:before {
@@ -111,7 +120,7 @@ ul li {
           transform: rotate(45deg);
 }
 
-.btnx .fa {
+.btnx .fa, .btnx .icon-googledrive {
   font-size: 38px;
   vertical-align: middle;
 }
@@ -139,9 +148,15 @@ ul li {
 }
 
 .fav-google {
-	--color: #dc4a38;
-	--hover: var(--color);
-	color: var(--color);
+  --color: #dc4a38;
+  --hover: var(--color);
+  color: var(--color);
+}
+
+.fav-gdrive {
+  --color: #0c9354;
+  --hover: var(--color);
+  color: var(--color);
 }
 
 .fav-facebook {
