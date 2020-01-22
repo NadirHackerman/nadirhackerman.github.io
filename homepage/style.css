@@ -13,7 +13,7 @@ ul li {
 .btnx,
 .btnx:before,
 .btnx .fa, 
-.btnx .icon-googledrive {
+.icon-googledrive::before {
   transition: all 0.35s;
   transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
 }
@@ -23,7 +23,7 @@ ul li {
   left: -110%;
 }
 
-.btnx .fa, .btnx i {
+.btnx .fa, .icon-googledrive::before {
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
 }
@@ -56,7 +56,7 @@ ul li {
   background-color: rgba(0, 0, 0, 0.0);
 }
 
-.btnx.gdrive .icon-googledrive {
+.icon-googledrive::before {
   color: #0c9354;
 }
 
@@ -85,6 +85,10 @@ ul li {
   color: #fff;
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+.btnx:hover .icon-googledrive::before {
+  font-size: 42px;
 }
 
 .social-btns {
