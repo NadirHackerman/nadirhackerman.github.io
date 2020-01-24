@@ -12,8 +12,8 @@ ul li {
 
 .btnx,
 .btnx:before,
-.btnx .fab,
-.btnx .far {
+.btnx .fa, 
+.icon-googledrive::before {
   transition: all 0.35s;
   transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
 }
@@ -23,9 +23,7 @@ ul li {
   left: -110%;
 }
 
-.btnx .fa,
-.btnx .fab,
-.btnx .far {
+.btnx .fa, .icon-googledrive::before {
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
 }
@@ -34,7 +32,7 @@ ul li {
   background-color: #3b5998;
 }
 
-.btnx.facebook .fab {
+.btnx.facebook .fa {
   color: #3b5998;
 }
 
@@ -42,7 +40,7 @@ ul li {
   background-color: #3cf;
 }
 
-.btnx.twitter .fab {
+.btnx.twitter .fa {
   color: #3cf;
 }
 
@@ -50,23 +48,23 @@ ul li {
   background-color: #dc4a38;
 }
 
-.btnx.google .fab {
+.btnx.google .fa {
   color: #dc4a38;
 }
 
 .btnx.gdrive:before {
-  background-color: #0c9354;
+  background-color: rgba(0, 0, 0, 0.0);
 }
 
-.btnx.gdrive .fab {
- color: #0c9354;
+.icon-googledrive::before {
+  color: #0c9354;
 }
 
 .btnx.reddit:before {
   background-color: #FF5700;
 }
 
-.btnx.reddit .fab {
+.btnx.reddit .fa {
   color: #FF5700;
 }
 
@@ -74,16 +72,8 @@ ul li {
   background-color: #00aff0;
 }
 
-.btnx.skype .fab {
+.btnx.skype .fa {
   color: #00aff0;
-}
-
-.btnx.bookmark .fab {
-  color: #007bff;
-}
-
-.btnx.bookmark:before {
-  background-color: #007bff;
 }
 
 .btnx:hover:before {
@@ -91,9 +81,7 @@ ul li {
   left: -10%;
 }
 
-.btnx:hover .fa,
-.btnx:hover .fab,
-.btnx:hover .far {
+.btnx:hover .fa {
   color: #fff;
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -136,14 +124,8 @@ ul li {
           transform: rotate(45deg);
 }
 
-.btnx .fa, 
-.btnx .fab {
+.btnx .fa, .btnx .icon-googledrive {
   font-size: 38px;
-  vertical-align: middle;
-}
-
-.btnx .far {
-  font-size: 32px;
   vertical-align: middle;
 }
 
@@ -167,12 +149,6 @@ ul li {
   color: #fff;
   box-shadow: inset 15em 0 0 0 var(--hover);
   transition: 0.7s;
-}
-
-.fav-bookmark {
-  --color: #007bff;
-  --hover: var(--color);
-  color: var(--color);  
 }
 
 .fav-google {
