@@ -78,12 +78,12 @@ ul li {
   color: #00aff0;
 }
 
-.btnx.bookmark .fab {
-  color: #007bff;
+.btnx.bookmark .far {
+  color: #000;
 }
 
 .btnx.bookmark:before {
-  background-color: #007bff;
+  background-color: #000;
 }
 
 .btnx:hover:before {
@@ -101,13 +101,6 @@ ul li {
 
 .btnx:hover .icon-googledrive::before {
   font-size: 42px;
-}
-
-.social-btns {
-  height: 90px;
-  font-size: 0;
-  text-align: center;
-  margin-top: 10%;
 }
 
 .btnx {
@@ -164,13 +157,13 @@ ul li {
 
 .favlink:hover, .favlink:focus {
   border-color: var(--hover);
-  color: #fff;
+  color: #fff !important;
   box-shadow: inset 15em 0 0 0 var(--hover);
   transition: 0.7s;
 }
 
 .fav-bookmark {
-  --color: #007bff;
+  --color: #000;
   --hover: var(--color);
   color: var(--color);  
 }
@@ -268,8 +261,25 @@ ul li {
   margin-bottom: 5em;
 }
 
+.social-btns {
+  height: 90px;
+  font-size: 0;
+  text-align: center;
+  margin-top: 10%;
+}
+
 .social-btns ul li {
   display: inline;
+}
+
+[data-color = 'black'] {
+  --color: #000;
+  --hover: var(--color);
+  color: var(--color);
+}
+
+[data-color = 'blue-sky'] {
+  color: #007bff;
 }
 
 @keyframes glowing {
