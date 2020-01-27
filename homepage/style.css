@@ -10,6 +10,10 @@ ul li {
   margin-bottom: 10px;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .btnx,
 .btnx:before,
 .btnx .fab,
@@ -79,11 +83,11 @@ ul li {
 }
 
 .btnx.bookmark .far {
-  color: #000;
+  color: #ec2bff;
 }
 
 .btnx.bookmark:before {
-  background-color: #000;
+  background-image: linear-gradient(to right top, #e800ff, #c25aff, #9f7aff, #868eff, #7c9df8);
 }
 
 .btnx:hover:before {
