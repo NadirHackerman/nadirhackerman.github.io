@@ -262,7 +262,11 @@ a:hover {
 }
 
 .separator {
-  margin-bottom: 5em;
+  margin-bottom: 3em;
+}
+
+.separator-sm {
+  margin-bottom: 1em;
 }
 
 .social-btns {
