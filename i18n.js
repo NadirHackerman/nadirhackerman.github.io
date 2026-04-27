@@ -129,7 +129,8 @@ const translations = {
 
 class LangSwitcher {
   constructor() {
-    this.current = localStorage.getItem('lang') || 'en';
+    const urlLang = new URLSearchParams(window.location.search).get('lang');
+    this.current = urlLang || localStorage.getItem('lang') || 'en';
     this.typewriterStrings = {
       en: ['scalable backend systems', 'cloud infrastructure', 'DevOps pipelines', 'APIs & microservices', 'solutions that matter'],
       fr: ['des systèmes backend scalables', 'des infrastructures cloud', 'des pipelines DevOps', 'des APIs & microservices', 'des solutions qui comptent'],
@@ -156,6 +157,15 @@ class LangSwitcher {
 
     // Update html lang attribute
     document.documentElement.lang = lang;
+
+    // Reflect language in URL for hreflang/SEO
+    const url = new URL(window.location.href);
+    if (lang === 'en') {
+      url.searchParams.delete('lang');
+    } else {
+      url.searchParams.set('lang', lang);
+    }
+    window.history.replaceState(null, '', url.toString());
 
     // Update typewriter if it exists
     if (window._typewriterInstance) {
