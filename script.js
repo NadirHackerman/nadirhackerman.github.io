@@ -182,6 +182,13 @@ class Typewriter {
         this.type();
     }
 
+    updateStrings(newWords) {
+        this.words = newWords;
+        this.wordIndex = 0;
+        this.txt = '';
+        this.isDeleting = false;
+    }
+
     type() {
         const current = this.wordIndex % this.words.length;
         const fullTxt = this.words[current];
@@ -544,11 +551,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize typewriter
     const typewriterElement = document.querySelector('.typewriter');
     if (typewriterElement) {
-        new Typewriter(typewriterElement, [
+        window._typewriterInstance = new Typewriter(typewriterElement, [
             'scalable backend systems',
             'cloud infrastructure',
             'DevOps pipelines',
-            'React applications',
             'APIs & microservices',
             'solutions that matter'
         ], 2000);
@@ -561,6 +567,7 @@ document.addEventListener('DOMContentLoaded', () => {
     new ContactForm();
     new MagneticButtons();
     new TiltEffect();
+    new LangSwitcher();
 
     // Console easter egg
     console.log(
