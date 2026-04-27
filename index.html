@@ -27,6 +27,7 @@
             <a href="#about" class="nav-link" data-i18n="nav.about">About</a>
             <a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a>
             <a href="#experience" class="nav-link" data-i18n="nav.experience">Experience</a>
+            <a href="#achievements" class="nav-link" data-i18n="nav.achievements">Highlights</a>
             <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
         </div>
         <div class="nav-cta">
@@ -50,6 +51,7 @@
         <a href="#about" class="mobile-link" data-i18n="nav.about">About</a>
         <a href="#skills" class="mobile-link" data-i18n="nav.skills">Skills</a>
         <a href="#experience" class="mobile-link" data-i18n="nav.experience">Experience</a>
+        <a href="#achievements" class="mobile-link" data-i18n="nav.achievements">Highlights</a>
         <a href="#contact" class="mobile-link" data-i18n="nav.contact">Contact</a>
     </div>
 
@@ -460,7 +462,7 @@
                     <div class="timeline-content">
                         <div class="timeline-date timeline-date--education">2020 - 2021</div>
                         <span class="timeline-type-label" data-i18n="exp.educationLabel">Education</span>
-                        <h3 class="timeline-title">Master's Degree — MIAGE Informatique pour la Finance</h3>
+                        <h3 class="timeline-title">Master's Degree , MIAGE Informatique pour la Finance</h3>
                         <h4 class="timeline-company">Université Paris Dauphine</h4>
                         <p class="timeline-description">
                             Graduate program combining computer science, software engineering, and financial
@@ -501,7 +503,7 @@
                         <div class="timeline-date timeline-date--education">2015 - 2020</div>
                         <span class="timeline-type-label" data-i18n="exp.educationLabel">Education</span>
                         <h3 class="timeline-title">Ingénieur en Informatique &amp; Master en Système d'information et Web</h3>
-                        <h4 class="timeline-company">ESI-SBA — École Supérieure en Informatique, Sidi Bel Abbès, Algeria</h4>
+                        <h4 class="timeline-company">ESI-SBA , École Supérieure en Informatique, Sidi Bel Abbès, Algeria</h4>
                         <p class="timeline-description">
                             Five-year engineering program in computer science, graduating with a dual
                             qualification: an engineering degree and a Master's in Information Systems and Web.
@@ -512,6 +514,163 @@
         </div>
     </section>
 
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="achievements.tag">Notable Work</span>
+                <h2 class="section-title" data-i18n="achievements.title">Key Achievements</h2>
+            </div>
+            <div class="achievements-grid">
+
+                <!-- Card 1: Monolith → Microservices -->
+                <div class="achievement-card">
+                    <div class="achievement-visual">
+                        <div class="ach-viz ach-viz--arch">
+                            <div class="mono-box">Monolith</div>
+                            <div class="ach-arrow"><i class="fas fa-arrow-right"></i></div>
+                            <div class="micro-nodes">
+                                <span class="micro-node">API</span>
+                                <span class="micro-node">Auth</span>
+                                <span class="micro-node">Worker</span>
+                                <span class="micro-node k8s-badge"><i class="fas fa-dharmachakra"></i> K8s</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="achievement-content">
+                        <div class="achievement-icon"><i class="fas fa-cubes"></i></div>
+                        <h3 class="achievement-title" data-i18n="achievements.arch.title">Monolith to Microservices</h3>
+                        <p class="achievement-desc" data-i18n="achievements.arch.desc">Led the full migration of a legacy monolithic application to a distributed microservices architecture, orchestrated with Kubernetes. Improved scalability, deployment independence, and fault isolation across services.</p>
+                        <div class="achievement-tags">
+                            <span class="tag">Kubernetes</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Java</span>
+                            <span class="tag">CI/CD</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: AI / LLM Integration -->
+                <div class="achievement-card">
+                    <div class="achievement-visual">
+                        <div class="ach-viz ach-viz--ai">
+                            <div class="ai-nodes">
+                                <div class="ai-node ai-input">Input</div>
+                                <div class="ai-core">
+                                    <span class="ai-pulse"></span>
+                                    <i class="fas fa-brain"></i>
+                                    <span>LLM</span>
+                                </div>
+                                <div class="ai-node ai-output">SaaS</div>
+                            </div>
+                            <svg class="ai-lines" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="50" y1="30" x2="80" y2="30" stroke="url(#lg)" stroke-width="1.5" stroke-dasharray="4 3"/>
+                                <line x1="120" y1="30" x2="150" y2="30" stroke="url(#lg)" stroke-width="1.5" stroke-dasharray="4 3"/>
+                                <defs>
+                                    <linearGradient id="lg" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" stop-color="#6366f1"/>
+                                        <stop offset="100%" stop-color="#06b6d4"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="achievement-content">
+                        <div class="achievement-icon"><i class="fas fa-brain"></i></div>
+                        <h3 class="achievement-title" data-i18n="achievements.ai.title">AI Features via LLMs</h3>
+                        <p class="achievement-desc" data-i18n="achievements.ai.desc">Integrated large language model capabilities into existing SaaS products to automate workflows, enhance user experience, and surface intelligent insights without rebuilding the core platform.</p>
+                        <div class="achievement-tags">
+                            <span class="tag">LLMs</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">APIs</span>
+                            <span class="tag">SaaS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Media Processing Pipeline -->
+                <div class="achievement-card">
+                    <div class="achievement-visual">
+                        <div class="ach-viz ach-viz--pipeline">
+                            <div class="pipeline-steps">
+                                <div class="pipe-step">
+                                    <i class="fas fa-image"></i>
+                                    <span>Ingest</span>
+                                </div>
+                                <div class="pipe-connector"></div>
+                                <div class="pipe-step">
+                                    <i class="fas fa-sliders-h"></i>
+                                    <span>Transform</span>
+                                </div>
+                                <div class="pipe-connector"></div>
+                                <div class="pipe-step pipe-step--ai">
+                                    <i class="fas fa-wand-magic-sparkles"></i>
+                                    <span>AI Edit</span>
+                                </div>
+                                <div class="pipe-connector"></div>
+                                <div class="pipe-step">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Output</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="achievement-content">
+                        <div class="achievement-icon"><i class="fas fa-photo-film"></i></div>
+                        <h3 class="achievement-title" data-i18n="achievements.media.title">Media Processing Pipeline</h3>
+                        <p class="achievement-desc" data-i18n="achievements.media.desc">Built a multi-stage image processing pipeline combining AI-powered editing components with algorithmic transformations , handling high-throughput media workloads with parallelism and fault tolerance.</p>
+                        <div class="achievement-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">AI / ML</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Data Analytics Ingestion -->
+                <div class="achievement-card">
+                    <div class="achievement-visual">
+                        <div class="ach-viz ach-viz--data">
+                            <div class="data-chart">
+                                <div class="chart-bars">
+                                    <div class="chart-bar" style="--h: 40%"></div>
+                                    <div class="chart-bar" style="--h: 65%"></div>
+                                    <div class="chart-bar" style="--h: 50%"></div>
+                                    <div class="chart-bar" style="--h: 80%"></div>
+                                    <div class="chart-bar" style="--h: 60%"></div>
+                                    <div class="chart-bar chart-bar--accent" style="--h: 95%"></div>
+                                </div>
+                                <svg class="chart-trend" viewBox="0 0 120 50" xmlns="http://www.w3.org/2000/svg">
+                                    <polyline points="0,40 20,30 40,35 60,20 80,25 100,10 120,5"
+                                        fill="none" stroke="url(#tg)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <defs>
+                                        <linearGradient id="tg" x1="0%" y1="0%" x2="100%" y2="0%">
+                                            <stop offset="0%" stop-color="#8b5cf6"/>
+                                            <stop offset="100%" stop-color="#06b6d4"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="achievement-content">
+                        <div class="achievement-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3 class="achievement-title" data-i18n="achievements.data.title">Data Analytics Integration</h3>
+                        <p class="achievement-desc" data-i18n="achievements.data.desc">Designed and implemented API integrations and data ingestion pipelines feeding real-time and batch analytics systems , enabling reliable data flow from diverse sources into analytics platforms.</p>
+                        <div class="achievement-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">APIs</span>
+                            <span class="tag">GCP</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
