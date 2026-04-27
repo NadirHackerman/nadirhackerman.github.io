@@ -1,225 +1,576 @@
-<!DOCTYPE HTML>
-<!--
-	Ethereal by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Nadir Bounoua</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadir | Senior Software Engineer</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cursor follower -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+    <!-- Particle background -->
+    <canvas id="particles"></canvas>
 
-				<!-- Wrapper -->
-					<div id="wrapper">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span class="logo-text">Nadir Bounoua</span>
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-cta">
+            <a href="#contact" class="btn btn-primary">Let's Talk</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
 
-						<!-- Panel (Banner) -->
-							<section class="panel banner right">
-								<div class="content color0 span-3-75">
-									<h1 class="major">Nadir Bounoua</h1>
-									<p>I am a <strong>Computer Science Engineer</strong>, a Fullstack Web Developer using technologies like FastAPI, Django, Spring Boot, NodeJS.. but also passionate about Data Analysis and Design. This is my online portfolio where you will find information about my projects.</p>
-									<ul class="actions">
-										<li><a href="#contact" class="button primary color1 circle icon fa-angle-right">Next</a></li>
-									</ul>
-								</div>
-								<div class="image filtered span-1-75" data-position="25% 25%">
-									<img src="images/nadirbounoua.jpg" alt="" />
-								</div>
-							</section>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#experience" class="mobile-link">Experience</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+    </div>
 
-						<!-- Panel Contact -->
-							<section class="panel color4-alt" id="contact">
-								<div class="intro color4">
-									<h2 class="major">Contact</h2>
-									<p>You can contact me via email or social media.</p>
-									<p>You'll also find links to my GitHub and CodePen account.</p>
-									<ul class="actions">
-										<li><a href="#openclass" class="button primary color1 circle icon fa-angle-right">Next</a></li>
-									</ul>									
-								</div>
-								<div class="inner columns divided">
-									<div class="span-1-5">
-										<ul class="contact-icons color1">
-											<li class="icon fa-linkedin"><a href="https://www.linkedin.com/in/nadirbounoua" target="_blank">in/nadirbounoua</a></li>
-											<li class="icon fa-envelope"><a href="mailto:anbounoua@gmail.com" target="_blank">anbounoua@gmail.com</a></li>
-											<li class="icon fa-twitter"><a href="https://twitter.com/nadirbounoua" target="_blank">@nadirbounoua</a></li>
-											<li class="icon fa-facebook"><a href="https://fb.me/nadir.bounoua" target="_blank">fb.me/nadir.bounoua</a></li>
-											<li class="icon fa-github"><a href="https://github.com/nadirbounoua" target="_blank">@nadirbounoua</a></li>
-											<li class="icon fa-codepen"><a href="https://codepen.io/Droggy" target="_blank">Nadir Bounoua</a></li>
-										</ul>
-									</div>
-								</div>
-							</section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="pulse"></span>
+                Available for opportunities
+            </div>
+            <h1 class="hero-title">
+                <span class="line">
+                    <span class="word">Hi, I'm</span>
+                </span>
+                <span class="line">
+                    <span class="word gradient-text">Nadir</span>
+                </span>
+            </h1>
+            <div class="typewriter-container">
+                <span class="typewriter-prefix">I build</span>
+                <span class="typewriter"></span>
+                <span class="typewriter-cursor">|</span>
+            </div>
+            <p class="hero-description">
+                Senior Software Engineer specializing in scalable backend systems,
+                cloud infrastructure, and DevOps.
+            </p>
+            <div class="hero-cta">
+                <a href="#experience" class="btn btn-primary btn-large">
+                    <span>View My Work</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-outline btn-large">
+                    <span>Get In Touch</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-count="6">0</span>
+                    <span class="stat-label">Years Experience</span>
+                    <span class="stat-sublabel">Backend · Frontend · DevOps</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="skills-highlight">
+                <div class="skills-highlight-header">
+                    <i class="fas fa-layer-group"></i>
+                    <span>Skills & Experience</span>
+                </div>
+                <div class="skills-highlight-list">
+                    <div class="skill-highlight-item">
+                        <div class="skill-highlight-info">
+                            <i class="fab fa-java"></i>
+                            <span class="skill-highlight-name">Java</span>
+                        </div>
+                        <div class="skill-highlight-bar-wrap">
+                            <div class="skill-highlight-bar" style="--years: 5; --max: 6;"></div>
+                        </div>
+                        <span class="skill-highlight-years">5 yrs</span>
+                    </div>
+                    <div class="skill-highlight-item">
+                        <div class="skill-highlight-info">
+                            <i class="fab fa-python"></i>
+                            <span class="skill-highlight-name">Python</span>
+                        </div>
+                        <div class="skill-highlight-bar-wrap">
+                            <div class="skill-highlight-bar" style="--years: 4; --max: 6;"></div>
+                        </div>
+                        <span class="skill-highlight-years">4 yrs</span>
+                    </div>
+                    <div class="skill-highlight-item">
+                        <div class="skill-highlight-info">
+                            <i class="fas fa-dharmachakra"></i>
+                            <span class="skill-highlight-name">Kubernetes</span>
+                        </div>
+                        <div class="skill-highlight-bar-wrap">
+                            <div class="skill-highlight-bar" style="--years: 4; --max: 6;"></div>
+                        </div>
+                        <span class="skill-highlight-years">4 yrs</span>
+                    </div>
+                    <div class="skill-highlight-item">
+                        <div class="skill-highlight-info">
+                            <i class="fas fa-terminal"></i>
+                            <span class="skill-highlight-name">Terraform</span>
+                        </div>
+                        <div class="skill-highlight-bar-wrap">
+                            <div class="skill-highlight-bar" style="--years: 5; --max: 6;"></div>
+                        </div>
+                        <span class="skill-highlight-years">5 yrs</span>
+                    </div>
+                    <div class="skill-highlight-item">
+                        <div class="skill-highlight-info">
+                            <i class="fab fa-aws"></i>
+                            <span class="skill-highlight-name">GCP / AWS</span>
+                        </div>
+                        <div class="skill-highlight-bar-wrap">
+                            <div class="skill-highlight-bar" style="--years: 5; --max: 6;"></div>
+                        </div>
+                        <span class="skill-highlight-years">5 yrs</span>
+                    </div>
+                    <div class="skill-highlight-item">
+                        <div class="skill-highlight-info">
+                            <i class="fab fa-react"></i>
+                            <span class="skill-highlight-name">React</span>
+                        </div>
+                        <div class="skill-highlight-bar-wrap">
+                            <div class="skill-highlight-bar" style="--years: 3; --max: 6;"></div>
+                        </div>
+                        <span class="skill-highlight-years">3 yrs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
 
-						<!-- Panel OpenClass -->
-							<section class="panel spotlight medium right" id="openclass">
-								<div class="content span-7">	
-										<div class="image filtered tinted" data-position="top">
-											<img src="images/openclass.png" alt="" />
-										</div>
-								</div>
-								<div class="content span-7">
-									<h2 class="major">OpenClass</h2>
-									<p>OpenClass is a web app that promote information sharing through organized workshops.<br/><br/><a href="https://github.com/youben11/open-class" target="_blank">View on GitHub</a></p>
-									<ul class="actions">
-										<li><a href="#dzpharma" class="button primary color1 circle icon fa-angle-right">Next</a></li>
-									</ul>	
-								</div>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">From Backend to Cloud</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-container">
+                        <div class="image-placeholder">
+                            <div class="avatar-graphic">
+                                <div class="avatar-ring"></div>
+                                <div class="avatar-ring"></div>
+                                <div class="avatar-ring"></div>
+                                <i class="fas fa-code"></i>
+                            </div>
+                        </div>
+                        <div class="experience-badge">
+                            <span class="years">6+</span>
+                            <span class="text">Years of<br>Experience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Building the backbone of modern applications</h3>
+                    <p>
+                        I'm a passionate Senior Software Engineer with a strong focus on backend
+                        development and DevOps practices. With 6+ years of experience, I've architected
+                        and built scalable systems that handle millions of requests.
+                    </p>
+                    <p>
+                        My expertise spans from designing robust APIs and microservices to implementing 
+                        CI/CD pipelines and managing cloud infrastructure. I believe in writing clean, 
+                        maintainable code and building systems that stand the test of time.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-server"></i>
+                            <div>
+                                <h4>Backend Expert</h4>
+                                <p>Scalable APIs & Microservices</p>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-cloud"></i>
+                            <div>
+                                <h4>DevOps Practitioner</h4>
+                                <p>CI/CD, Containers & Cloud</p>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-laptop-code"></i>
+                            <div>
+                                <h4>Frontend Developer</h4>
+                                <p>Modern Web Interfaces</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Contact Me</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-								<div class="image filtered tinted" data-position="top left">
-									<img src="images/_pic01.jpg" alt="" />
-								</div>
-							</section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Skills & Expertise</span>
+                <h2 class="section-title">Technologies I Master</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Backend Development</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-java"></i></div>
+                            <span class="skill-name">Java</span>
+                            <span class="skill-level level-expert">Expert</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <span class="skill-name">Python</span>
+                            <span class="skill-level level-expert">Expert</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-leaf"></i></div>
+                            <span class="skill-name">MongoDB</span>
+                            <span class="skill-level level-expert">Expert</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                            <span class="skill-name">Node.js</span>
+                            <span class="skill-level level-proficient">Proficient</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <span class="skill-name">PostgreSQL</span>
+                            <span class="skill-level level-proficient">Proficient</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-pepper-hot"></i></div>
+                            <span class="skill-name">Django</span>
+                            <span class="skill-level level-proficient">Proficient</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3>DevOps & Cloud</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-docker"></i></div>
+                            <span class="skill-name">Docker</span>
+                            <span class="skill-level level-expert">Expert</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-terminal"></i></div>
+                            <span class="skill-name">Terraform</span>
+                            <span class="skill-level level-expert">Expert</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-jenkins"></i></div>
+                            <span class="skill-name">CI/CD</span>
+                            <span class="skill-level level-expert">Expert</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-aws"></i></div>
+                            <span class="skill-name">AWS</span>
+                            <span class="skill-level level-proficient">Proficient</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                            <span class="skill-name">GCP</span>
+                            <span class="skill-level level-proficient">Proficient</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-dharmachakra"></i></div>
+                            <span class="skill-name">Kubernetes</span>
+                            <span class="skill-level level-proficient">Proficient</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <h3>Frontend Development</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-js"></i></div>
+                            <span class="skill-name">TypeScript</span>
+                            <span class="skill-level level-expert">Expert</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-bolt"></i></div>
+                            <span class="skill-name">Next.js</span>
+                            <span class="skill-level level-expert">Expert</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-react"></i></div>
+                            <span class="skill-name">React</span>
+                            <span class="skill-level level-proficient">Proficient</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-wind"></i></div>
+                            <span class="skill-name">Tailwind CSS</span>
+                            <span class="skill-level level-familiar">Familiar</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-vuejs"></i></div>
+                            <span class="skill-name">Vue.js</span>
+                            <span class="skill-level level-familiar">Familiar</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-angular"></i></div>
+                            <span class="skill-name">Angular</span>
+                            <span class="skill-level level-familiar">Familiar</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-						<!-- Panel DZPharma -->
-							<section class="panel spotlight medium right" id="dzpharma">
-								<div class="content span-7">	
-										<div class="image filtered tinted" data-position="top">
-											<img src="images/dzpharma.jpg" alt="" />
-										</div>
-								</div>
-								<div class="content span-7">
-									<h2 class="major">DZPharma</h2>
-									<p>A platform designed to provide pharmaceutical news to pharmacists and healthcare professionals in Algeria<br/><br/><a href="http://dzpharma.com" target="_blank">Visit DZPharma</a></p>
-									<ul class="actions">
-										<li><a href="#algeriaclean" class="button primary color1 circle icon fa-angle-right">Next</a></li>
-									</ul>	
-								</div>
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Career Journey</span>
+                <h2 class="section-title">Professional Experience</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2025 - Present</div>
+                        <h3 class="timeline-title">Senior Software Engineer</h3>
+                        <h4 class="timeline-company">Autoretouch</h4>
+                        <p class="timeline-description">
+                            Wearing many hats across the product: owning backend services, cloud infrastructure,
+                            and deployment pipelines end-to-end. Designed and maintained the full infrastructure
+                            on AWS and GCP with Terraform, built and operated CI/CD pipelines, and drove
+                            architectural decisions across the platform. Hands-on with support, maintenance,
+                            and reliability. Minimal frontend involvement.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">GCP</span>
+                            <span class="tag">Terraform</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Docker</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024 - 2025</div>
+                        <h3 class="timeline-title">Senior Software Engineer</h3>
+                        <h4 class="timeline-company">Partoo</h4>
+                        <p class="timeline-description">
+                            Fullstack development on a fast-moving product, contributing to both backend APIs
+                            and frontend features. Worked across the stack with a focus on quality, performance,
+                            and scalable cloud deployments on AWS.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">React</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Kubernetes</span>
+                            <span class="tag">AWS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021 - 2024</div>
+                        <h3 class="timeline-title">Software Engineer</h3>
+                        <h4 class="timeline-company">JUMP Technology</h4>
+                        <p class="timeline-description">
+                            Built and maintained backend services in a Java-based environment, with a strong
+                            focus on CI/CD automation and container orchestration. Contributed to cloud
+                            infrastructure on AWS and participated in cross-functional delivery.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Kubernetes</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">CI/CD</span>
+                            <span class="tag">Jenkins</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date timeline-date--education">2020 - 2021</div>
+                        <span class="timeline-type-label">Education</span>
+                        <h3 class="timeline-title">Master's Degree — MIAGE Informatique pour la Finance</h3>
+                        <h4 class="timeline-company">Université Paris Dauphine</h4>
+                        <p class="timeline-description">
+                            Graduate program combining computer science, software engineering, and financial
+                            information systems. Focused on applied IT for banking and financial markets.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2019 - 2020</div>
+                        <h3 class="timeline-title">Freelance Software Engineer</h3>
+                        <h4 class="timeline-company">Independent</h4>
+                        <p class="timeline-description">
+                            Delivered web projects for various clients across backend and frontend,
+                            alongside the final year of engineering school. Built and deployed
+                            applications on GCP using Docker, covering a wide range of technologies
+                            depending on project needs.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Django</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">GCP</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Angular</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date timeline-date--education">2015 - 2020</div>
+                        <span class="timeline-type-label">Education</span>
+                        <h3 class="timeline-title">Ingénieur en Informatique &amp; Master en Système d'information et Web</h3>
+                        <h4 class="timeline-company">ESI-SBA — École Supérieure en Informatique, Sidi Bel Abbès, Algeria</h4>
+                        <p class="timeline-description">
+                            Five-year engineering program in computer science, graduating with a dual
+                            qualification: an engineering degree and a Master's in Information Systems and Web.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-								<div class="image filtered tinted" data-position="top left">
-									<img src="images/_pic02.jpg" alt="" />
-								</div>
-							</section>
 
-						<!-- Panel Algeria Clean -->
-							<section class="panel spotlight medium right" id="algeriaclean">
-								<div class="content span-7">	
-										<div class="image filtered tinted" data-position="top">
-											<img src="images/sbaclean.png" alt="" />
-										</div>
-								</div>
-								<div class="content span-7">
-									<h2 class="major">Algeria Clean</h2>
-									<p>A social media to report anomalies in any city in Algeria, like accidents, fires.. etc<br/><br/><a href="https://github.com/nadirbounoua/sbaclean" target="_blank">View on GitHub</a></p>
-									<ul class="actions">
-										<li><a href="#recipeadviser" class="button primary color1 circle icon fa-angle-right">Next</a></li>
-									</ul>	
-								</div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="section-header">
+                        <span class="section-tag">Get In Touch</span>
+                        <h2 class="section-title">Let's Work Together</h2>
+                    </div>
+                    <p class="contact-description">
+                        Have a project in mind or want to discuss opportunities? 
+                        I'm always open to new challenges and collaborations.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="label">Email</span>
+                                <a href="mailto:contact@nadirbounoua.com">contact@nadirbounoua.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="label">Location</span>
+                                <span>France · Available Worldwide (Remote)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/nadirbounoua" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/nadirbounoua/" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-								<div class="image filtered tinted" data-position="top left">
-									<img src="images/_pic02.jpg" alt="" />
-								</div>
-							</section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text">Nadir Bounoua</span>
+                    <p>Backend, DevOps & Cloud Engineering</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nadir. All rights reserved.</p>
+                <p>Crafted with <i class="fas fa-heart"></i> and lots of <i class="fas fa-coffee"></i></p>
+            </div>
+        </div>
+    </footer>
 
-						<!-- Panel Recipe Adviser -->
-							<section class="panel spotlight medium right" id="recipeadviser">
-								<div class="content span-7">	
-										<div class="image filtered tinted" data-position="top">
-											<img src="images/recipeadviser.png" alt="" />
-										</div>
-								</div>
-								<div class="content span-7">
-									<h2 class="major">Recipe Adviser</h2>
-									<p>You don't know what to prepare for the dinner? Recipe Adviser app on Android solves your problem. Find recipes depending on the ingredients you have.<br/><br/><a href="http://nadirqg.byethost32.com/recipe-adviser-1-10" target="_blank">Download for Android</a></p>
-									<ul class="actions">
-										<li><a href="#elitesms" class="button primary color1 circle icon fa-angle-right">Next</a></li>
-									</ul>	
-								</div>
-
-								<div class="image filtered tinted" data-position="top left">
-									<img src="images/_pic01.jpg" alt="" />
-								</div>
-							</section>
-
-						<!-- Panel AIESEC.DZ -->
-							<!-- <section class="panel spotlight medium right" id="aiesecdz">
-								<div class="content span-7">	
-										<div class="image filtered tinted" data-position="top">
-											<img src="images/aiesecdz.png" alt="" />
-										</div>
-								</div>
-								<div class="content span-7">
-									<h2 class="major">AIESEC.DZ</h2>
-									<p>The official website representing AIESEC in Algeria.<br/><br/><a href="http://www.aiesec.dz" target="_blank">Visit AIESEC.DZ</a></p>
-									<ul class="actions">
-										<li><a href="#elitesms" class="button primary color1 circle icon fa-angle-right">Next</a></li>
-									</ul>	
-								</div>
-
-								<div class="image filtered tinted" data-position="top left">
-									<img src="images/_pic01.jpg" alt="" />
-								</div>
-							</section> -->
-
-						<!-- Panel EliteSMS -->
-							<section class="panel spotlight medium right color4-alt" id="elitesms">
-								<div class="content span-7">	
-										<div class="image filtered tinted" data-position="top">
-											<img src="images/elitesms.png" alt="" />
-										</div>
-								</div>
-								<div class="content span-7">
-									<h2 class="major">EliteSMS</h2>
-									<p>A nodejs Web App to send and manage SMS marketing.<br/><br/></p>
-									<ul class="actions">
-										<li><a href="#floortiles" class="button primary color1 circle icon fa-angle-right">Next</a></li>
-									</ul>	
-								</div>
-
-							</section>
-
-
-						<!-- Panel Floor Tiles -->
-							<section class="panel spotlight medium right color4-alt" id="floortiles">
-								<div class="content span-7">	
-										<div class="image filtered tinted" data-position="top">
-											<img src="images/floortiles.png" alt="" />
-										</div>
-								</div>
-								<div class="content span-7">
-									<h2 class="major">Floor Tiles</h2>
-									<p>A nodejs Web App to simulate floor tiles coloring.<br/><br/></p>
-									<ul class="actions">
-										<li><a href="#offlinestool" class="button primary color1 circle icon fa-angle-right">Next</a></li>
-									</ul>	
-								</div>
-
-							</section>							
-
-						<!-- Panel AIESEC Offlines Manager -->
-							<!-- <section class="panel spotlight medium right color1-alt" id="offlinestool">
-								<div class="content span-7">	
-										<div class="image filtered tinted" data-position="top">
-											<img src="images/offlines.png" alt="" />
-										</div>
-								</div>
-								<div class="content span-7">
-									<h2 class="major">AIESEC Offlines Manager</h2>
-									<p>Collect & manage the data of prticipants in AIESEC in Algeria offline events.<br/><br/><a href="https://github.com/nadirbounoua/aiesec-promotions-tool" target="_blank">View on GitHub</a></p>
-
-								</div>
-
-							</section> -->
-
-						<!-- Copyright -->
-							<div class="copyright">&copy; Nadir Bounoua.<div>
-
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <script src="script.js"></script>
+</body>
 </html>
